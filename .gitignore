@@ -1,5 +1,6 @@
 
 .vs/muparser/v16/.suo
+.cache/*
 *.db
 *.db-shm
 *.opendb
