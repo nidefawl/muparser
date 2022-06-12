@@ -78,7 +78,7 @@
             if (!(COND))											\
             {														\
               stringstream_type ss;									\
-              ss << _T("Assertion \"") _T(#COND) _T("\" failed: ")	\
+              ss << _T("Assertion failed: ")	\
                  << __FILE__ << _T(" line ")						\
                  << __LINE__ << _T(".");							\
               throw ParserError( ecINTERNAL_ERROR, -1, ss.str());   \
