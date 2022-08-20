@@ -39,6 +39,7 @@
 
 /* From http://gcc.gnu.org/wiki/Visibility */
 /* Generic helper definitions for shared library support */
+#ifndef MUPARSER_STATIC 
 #if defined _WIN32 || defined __CYGWIN__
 	#define MUPARSER_HELPER_DLL_IMPORT __declspec(dllimport)
 	#define MUPARSER_HELPER_DLL_EXPORT __declspec(dllexport)
@@ -53,6 +54,7 @@
 		#define MUPARSER_HELPER_DLL_EXPORT
 		#define MUPARSER_HELPER_DLL_LOCAL
 	#endif
+#endif
 #endif
 
 /* 
